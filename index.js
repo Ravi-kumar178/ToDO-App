@@ -10,9 +10,11 @@ app.use(express.json());
 
 //import routes
 const todoRoutes = require("./routes/todos") ;
+/* console.log(todoRoutes); */
 
 //mounting the route
 app.use("/api/v1",todoRoutes);
+/* console.log(app); */
 
 const dbConnect = require("./config/database");
 dbConnect();
